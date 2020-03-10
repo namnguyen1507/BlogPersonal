@@ -1,0 +1,198 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 12px;
+    line-height: 18px;
+    padding: 0;
+    background-color: #414042;
+}
+/*end body*/
+
+/* ------------ header ----------- */
+header{
+    width: 1200px;
+    background-color: #414042;
+    height: 80px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0px 1px 10px 1px #8888;
+}
+/* end header */
+header .logo{
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+/* end header logo*/
+header .logo img{
+    width: 135px;
+    height: 50px;
+    margin: 15px 32.5px;
+}
+/* end header logo img */
+header .nav_01, header .nav_text{
+    padding-top: 30px;
+    width: 800px;
+    text-align: center;
+}
+/**/
+header .nav_01 a:link, header .nav_01 a:visited{
+    display: inline-block;
+    height: 35px;
+    width: 114px;
+    background-color: white;
+    text-decoration: none;
+    color: white;
+
+    transition: transform .2s linear;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: scaleY(.2)
+}
+/**/
+header .nav_01 a:hover{
+    transform: scaleY(1);
+    color: white;
+}
+/**/
+header .nav_text
+{
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 999;
+}
+/**/
+header .nav_text a:link, header .nav_text a:visited{
+    width: 114px;
+    height: 35px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;;
+}
+/**/
+header .nav_01 a.Home {
+    background: #F1A22C;
+    border-top-left-radius: 7px; 
+    border-top-right-radius: 7px; 
+}
+/**/
+header .nav_01 a.Handmade {
+    background: #00AEEF;
+    border-top-left-radius: 7px; 
+    border-top-right-radius: 7px; 
+}
+/**/
+header .nav_01 a.Pokemon {
+    background: #00B7A3;
+    border-top-left-radius: 7px; 
+    border-top-right-radius: 7px; 
+}
+/**/
+header .nav_01 a.Book {
+    background: #F15B6A;
+    border-top-left-radius: 7px; 
+    border-top-right-radius: 7px; 
+}
+/**/
+header .social{
+    width: 200px;
+    padding: 24px 22px;
+}
+/**/
+header .social a{
+    text-decoration: none;
+    padding: 10px;
+}
+/* ------------ header ----------- */
+/* ------------ section ----------- */
+section{
+    width: 1200px;
+    padding: 0px;
+    background-color: #414042;
+    margin: 0px auto;
+}
+section .myslide{
+    width: 1040px;
+    height: 372px;
+    margin: 30px auto;
+}
+section .myslide img{
+    width: 1040px;
+    height: 372px;
+}
+section .myslide .carousel-indicators{
+    visibility: hidden;
+}
+/**/
+section .hangngang{
+    width: 1080px;
+    height: 220px;
+    margin: auto;
+    display: flex;
+}
+section .hangngang .moviebox{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    background-color: #414042;
+    border: 1px solid #414141;
+    position: relative;
+    transition: 0.4s;
+}
+section .hangngang .moviebox img{
+    width: 240px;
+    height: 130px;
+    top: 4px;
+    left: 4px;
+    position: absolute;
+}
+section .hangngang .moviebox p{
+    top: 140px;
+    left: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8e8d8d;
+    position: absolute;
+    transition: 0.4s;
+}
+section .moviebox:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px 3px #8888;
+}
+section .moviebox:hover p{
+    color: white;
+}
+
+/*------------ Footer -------------*/
+footer{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414042;
+    text-align: center;
+    box-shadow: 0px 1px 10px 1px #8888;
+}
+
+footer p{
+    font-weight: bold;
+    padding: 15px;
+    margin: 0px;
+}
+
+footer .hieuung{
+    text-align: center;
+    background: linear-gradient(to left, #5ebd3e 10%, #ffb900 20%, #f78200 30%, #e23838 40%, #973999 50%, #009cdf 60%, #5ebd3e 70%, #ffb900 80%, #f78200 90%, #e23838 100%);
+    background-size: 200% auto;
+    color: #000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 1s linear infinite;
+    animation: shine 1s linear infinite;
+}
+@-webkit-keyframes shine { to {   background-position: 200% center;}}
+/* ------------ end footer ----------- */
